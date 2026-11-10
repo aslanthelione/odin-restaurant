@@ -14,3 +14,25 @@ body {
     background-repeat: no-repeat;
     outline: 1px solid red;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    border: none;
+    padding: 16px 24px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+
+    font-size: 2rem;
+    
+    color: white;
+
+    &:hover {
+        border-bottom: 2px solid white;
+    }
+}
