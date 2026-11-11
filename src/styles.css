@@ -7,8 +7,9 @@
 }
 
 :root {
-    --bg: rgba(0, 0, 0, 0.5);
+    --bg: rgba(0, 0, 0, 0.6);
     --nugget: #d19526;
+    font-size: 1.6em;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
 h1 {
     text-align: center;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 nav {
@@ -43,7 +45,7 @@ button {
     border-bottom: 2px solid transparent;
     cursor: pointer;
 
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     color: white;
 
@@ -53,8 +55,33 @@ button {
     }
 }
 
+h1, h2 {
+    color: var(--nugget);
+}
+
+#content {
+    background: var(--bg);
+    align-self: center;
+    padding: 32px;
+    display: grid;
+    width: fit-content;
+
+    color: white;
+
+    h2 {
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    p {
+        line-height: 1.5;
+        width: 0;
+        min-width: 100%;
+        font-family: sans-serif;
+    }
+}
+
 footer {
-    margin-top: auto;
     text-align: center;
     background: var(--bg);
     padding: 8px;
@@ -66,7 +93,7 @@ footer {
         color: white;
 
         &:hover {
-            color: #d19526;
+            color: var(--nugget);
             text-decoration: none;
         }
     }
