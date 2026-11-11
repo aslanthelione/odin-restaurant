@@ -79,6 +79,20 @@ h1, h2 {
         min-width: 100%;
         font-family: sans-serif;
     }
+
+    a {
+        color: var(--nugget);
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 16px;
+
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
 }
 
 footer {
