@@ -16,9 +16,18 @@ body {
 }
 
 header {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+nav {
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 button {
