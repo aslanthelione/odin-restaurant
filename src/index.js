@@ -1,12 +1,18 @@
-import "./styles.css"
-import home from "./home.js"
-import menu from "./menu.js"
-import contact from "./contact.js"
+import "./styles.css";
+import home from "./home.js";
+import menu from "./menu.js";
+import contact from "./contact.js";
 
-console.log('Hello from index.js');
-
+const pages = { home, menu, contact };
 const content = document.getElementById("content");
 
-content.replaceChildren(
-    ...home()
-);
+function show(name) {
+  content.replaceChildren(...pages[name]());
+}
+
+document.querySelector("nav").addEventListener("click", (event) => {
+  const page = event.target.dataset.page;
+  if (page) show(page);
+});
+
+show("home"); // initial page
