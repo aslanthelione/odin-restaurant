@@ -78,13 +78,6 @@ h1, h2 {
         white-space: nowrap;
     }
 
-    p {
-        line-height: 1.5;
-        width: 0;
-        min-width: 100%;
-        font-family: sans-serif;
-    }
-
     a {
         color: var(--nugget);
         font-family: sans-serif;
@@ -98,6 +91,43 @@ h1, h2 {
             text-decoration: none;
         }
     }
+}
+
+#content > p {
+    line-height: 1.5;
+    width: 0;
+    min-width: 100%;
+    font-family: sans-serif;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.menu-item {
+  border: 2px solid goldenrod;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.price-info {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.price-info p {
+    margin: 0;
+}
+
+.menu-item:last-of-type {
+    grid-column: 1 / -1;
 }
 
 footer {
