@@ -10,6 +10,6 @@ export default function () {
             e("em", {}, "succulent"),
             " chicken nugget in the history of mankind."
         ),
-        e("a", {}, "Get yours today!")
+        e("a", { href: "#"}, "Get yours today!")
     ]
 }
