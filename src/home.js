@@ -1,4 +1,4 @@
-import { e } from "./index.js"
+import { e } from "./dom.js"
 
 export default function () {
     return [
