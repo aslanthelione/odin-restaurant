@@ -8,6 +8,9 @@ const content = document.getElementById("content");
 
 function show(name) {
   content.replaceChildren(...pages[name]());
+  for (const btn of document.querySelectorAll("nav button")) {
+    btn.classList.toggle("active", btn.dataset.page === name);
+  }
 }
 
 document.querySelector("nav").addEventListener("click", (event) => {

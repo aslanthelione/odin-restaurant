@@ -53,7 +53,13 @@ button {
         border-bottom: 2px solid white;
         color: var(--nugget);
     }
+
+    &.active{
+        border-bottom: 2px solid var(--nugget);
+    }
 }
+
+
 
 h1, h2 {
     color: var(--nugget);
